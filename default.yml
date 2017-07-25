@@ -1,0 +1,116 @@
+AllCops:
+  DisplayCopNames: true
+
+Layout/AlignParameters:
+  EnforcedStyle: "with_fixed_indentation"
+
+Layout/CaseIndentation:
+  EnforcedStyle: "end"
+
+Layout/ClosingParenthesisIndentation:
+  Enabled: false
+
+Layout/ElseAlignment:
+  Enabled: false
+
+Layout/EmptyLinesAroundClassBody:
+  EnforcedStyle: "empty_lines_except_namespace"
+
+Layout/EmptyLinesAroundModuleBody:
+  EnforcedStyle: "empty_lines_except_namespace"
+
+Layout/FirstParameterIndentation:
+  EnforcedStyle: "consistent"
+
+Layout/IndentArray:
+  EnforcedStyle: "consistent"
+
+Layout/IndentHash:
+  EnforcedStyle: "consistent"
+
+Layout/IndentHeredoc:
+  EnforcedStyle: squiggly
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: "indented"
+
+Layout/MultilineOperationIndentation:
+  EnforcedStyle: "indented"
+
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - "spec/**/*.rb"
+
+Lint/EndAlignment:
+  EnforcedStyleAlignWith: "start_of_line"
+
+Lint/ShadowingOuterLocalVariable:
+  Enabled: false
+
+Lint/UnneededSplatExpansion:
+  Enabled: false
+
+Metrics/BlockLength:
+  ExcludedMethods:
+    - "context"
+    - "define"
+    - "describe"
+    - "let"
+    - "it"
+
+Metrics/LineLength:
+  Max: 160
+
+Performance/Caller:
+  Enabled: false
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/BracesAroundHashParameters:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/EmptyElse:
+  EnforcedStyle: "empty"
+
+Style/FormatStringToken:
+  EnforcedStyle: "template"
+
+Style/GuardClause:
+  MinBodyLength: 2
+
+Style/HashSyntax:
+  EnforcedStyle: "ruby19_no_mixed_keys"
+
+Style/Lambda:
+  EnforcedStyle: "literal"
+
+Style/NegatedIf:
+  EnforcedStyle: "postfix"
+
+Style/NumericLiteralPrefix:
+  EnforcedOctalStyle: "zero_only"
+
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    "%i": "[]"
+    "%I": "[]"
+    "%r": "{}"
+    "%w": "[]"
+    "%W": "[]"
+    "%x": "{}"
+
+Style/StringLiterals:
+  EnforcedStyle: "double_quotes"
+
+Style/TernaryParentheses:
+  EnforcedStyle: "require_parentheses_when_complex"
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: "comma"
+
+Style/TrailingCommaInLiteral:
+  EnforcedStyleForMultiline: "comma"
