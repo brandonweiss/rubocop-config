@@ -19,6 +19,9 @@ Layout/EmptyLinesAroundClassBody:
 Layout/EmptyLinesAroundModuleBody:
   EnforcedStyle: "empty_lines_except_namespace"
 
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: "start_of_line"
+
 Layout/FirstParameterIndentation:
   EnforcedStyle: "consistent"
 
@@ -41,9 +44,6 @@ Lint/AmbiguousBlockAssociation:
   Exclude:
     - "spec/**/*.rb"
 
-Lint/EndAlignment:
-  EnforcedStyleAlignWith: "start_of_line"
-
 Lint/ShadowingOuterLocalVariable:
   Enabled: false
 
@@ -60,6 +60,22 @@ Metrics/BlockLength:
 
 Metrics/LineLength:
   Max: 160
+
+Naming/UncommunicativeBlockParamName:
+  AllowedNames:
+    - "by"
+    - "cc"
+    - "id"
+    - "ip"
+    - "to"
+
+Naming/UncommunicativeMethodParamName:
+  AllowedNames:
+    - "by"
+    - "cc"
+    - "id"
+    - "ip"
+    - "to"
 
 Performance/Caller:
   Enabled: false
@@ -112,5 +128,8 @@ Style/TernaryParentheses:
 Style/TrailingCommaInArguments:
   EnforcedStyleForMultiline: "comma"
 
-Style/TrailingCommaInLiteral:
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: "comma"
+
+Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: "comma"

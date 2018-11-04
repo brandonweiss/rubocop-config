@@ -18,3 +18,13 @@ Metrics/BlockLength:
 
 Rails/Delegate:
   Enabled: false
+
+Rails/HasManyOrHasOneDependent:
+  Enabled: false
+
+Rails/UnknownEnv:
+  Environments:
+    - "development"
+    - "production"
+    - "staging"
+    - "test"
